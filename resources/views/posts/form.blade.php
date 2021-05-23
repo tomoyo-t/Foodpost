@@ -18,7 +18,7 @@
                 
                 <div class="form-group">
                     {!! Form::label('comment', 'Comment') !!}
-                    {!! Form::textarea('comment', null, ['class' => 'form-control','placeholder' => '※50字以内で入力してください']) !!}
+                    {!! Form::textarea('comment', null, ['class' => 'form-control','placeholder' => '※100字以内で入力してください']) !!}
                 </div>
                 
                 {!! Form::label('photo', 'Photo') !!}

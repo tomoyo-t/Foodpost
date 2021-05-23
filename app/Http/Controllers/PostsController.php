@@ -43,7 +43,7 @@ class PostsController extends Controller
         $request->validate([
             'country_id' => 'required|max:255',
             'store_information' => 'required|max:255',
-            'comment' => 'required|max:50',
+            'comment' => 'required|max:100',
             'photo' => 'required|image',
         ]);
         
