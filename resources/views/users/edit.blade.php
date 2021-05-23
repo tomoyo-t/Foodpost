@@ -21,7 +21,7 @@
                 
                 <div class="form-group mb-4">
                     {!! Form::label('comment', 'Comment') !!}
-                    {!! Form::textarea('comment', null, ['class' => 'form-control','placeholder' => '・40字以内で入力してください']) !!}
+                    {!! Form::textarea('comment', null, ['class' => 'form-control','placeholder' => '・30字以内で入力してください']) !!}
                 </div>
                 <img src="{{ $post->photo }}">
                 

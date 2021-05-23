@@ -9,7 +9,7 @@
                 @include('posts.like_button')
                 @if (Auth::id() == $post->user_id)
                 
-                    {!! link_to_route('posts.edit', 'Edit', ['post' => $post->id], ['class' => 'btn font-weight-bold btn-sm mb-1 px-3']) !!}
+                    {!! link_to_route('posts.edit', 'Edit', ['post' => $post->id], ['class' => 'btn font-weight-bold text-center btn-sm mb-1']) !!}
                     {!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
                         {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-sm']) !!}
                     {!! Form::close() !!}
