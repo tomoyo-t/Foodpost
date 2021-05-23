@@ -8,7 +8,7 @@
             {!! Form::open(['route' => 'posts.store', 'files' => true ]) !!}
                 <div class="form-group">
                     {!! Form::label('country_id', 'Country') !!}
-                    {!! Form::select('country_id', ['日本' => '日本', '韓国' => '韓国', '台湾' => '台湾', 'インド' => 'インド', '中国' => '中国'],[],['class' => 'btn btn-outline btn-block text-secondary',  'placeholder' => '選択してください']) !!}                    
+                    {!! Form::select('country_id', config('country_list'),[],['class' => 'btn btn-outline btn-block text-secondary',  'placeholder' => '選択してください']) !!}                    
                 </div>
                 
                 <div class="form-group">
@@ -18,7 +18,7 @@
                 
                 <div class="form-group">
                     {!! Form::label('comment', 'Comment') !!}
-                    {!! Form::textarea('comment', null, ['class' => 'form-control']) !!}
+                    {!! Form::textarea('comment', null, ['class' => 'form-control','placeholder' => '※30字以内で入力してください']) !!}
                 </div>
                 
                 {!! Form::label('photo', 'Photo') !!}

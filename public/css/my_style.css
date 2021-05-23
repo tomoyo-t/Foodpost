@@ -66,12 +66,15 @@ main_caption {
 
 
 .item {
+    width: 280px;
+    height: 450px;
     border: solid 1px #3f3f3f;
     border-radius:  5px;
     color: #3f3f3f;
     padding: 15px;
     margin: 15px;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .item img {
@@ -82,10 +85,15 @@ main_caption {
     margin-bottom: 10px;
 }
 
+.comment {
+    flex-grow: 1;
+}
+
 .item .btn {
     border: solid 1px #a2a2a2;
     padding: 1px 10px;
     margin-left: 200px;
+    display: inline-block !important;
 }  
 
 
