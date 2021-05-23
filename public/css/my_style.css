@@ -67,7 +67,7 @@ main_caption {
 
 .item {
     width: 280px;
-    height: 470px;
+    height: auto;
     border: solid 1px #3f3f3f;
     border-radius:  5px;
     color: #3f3f3f;
