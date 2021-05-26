@@ -19,7 +19,7 @@
             <footer>
                 <div id="footer_navi">
                     <ul>
-                        <li>{!! link_to_route('user.index', 'My profile', ['user' => Auth::id()], ['class' => 'text-secondary']) !!}</li>
+                        <li>{!! link_to_route('user.index', 'My pafe', ['user' => Auth::id()], ['class' => 'text-secondary']) !!}</li>
                         <li><a href="{{ route('posts.form') }}" class="text-secondary">Post</a></li>
                     </ul>
                 </div>

@@ -7,7 +7,6 @@ use App\User;
 use App\Post;
 
 
-
 class UserController extends Controller
 {
     public function index(User $id)

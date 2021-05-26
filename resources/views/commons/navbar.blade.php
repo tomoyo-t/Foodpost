@@ -19,7 +19,7 @@
                         <ul class="dropdown-menu dropdown-menu-right">
                             <li class="dropdown-item"><a href="{{ route('posts.form') }}" class="text-secondary">Post</a></li>
                             <li class="dropdown-divider"></li>
-                            <li class="dropdown-item">{!! link_to_route('user.index', 'My profile', ['user' => Auth::id()], ['class' => 'text-secondary']) !!}</li>
+                            <li class="dropdown-item">{!! link_to_route('user.index', 'My page', ['user' => Auth::id()], ['class' => 'text-secondary']) !!}</li>
                             <li class="dropdown-divider"></li>
                             <li class="dropdown-item">{!! link_to_route('logout.get', 'Logout',[], ['class' => 'text-secondary']) !!}</li>
                         </ul>

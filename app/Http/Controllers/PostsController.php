@@ -50,9 +50,7 @@ class PostsController extends Controller
         $disk = Storage::disk('s3');
         
         $file = $request->file('photo');
-        //$path = Storage::disk('s3')->putFile('/', $file, 'public');
         $path = $disk->putFile('/', $file, 'public');
-        //$photo = Storage::disk('s3')->url($path);
         $photo = $disk->url($path);
 
         $request->user()->posts()->create([
@@ -88,12 +86,10 @@ class PostsController extends Controller
     {
         $post = \App\Post::findOrFail($id);
         
-        // メッセージを更新
         $post->store_information = $request->store_information;
         $post->comment = $request->comment;
         $post->save();
 
-        // トップページへリダイレクトさせる
         return redirect('/');
     }
 
@@ -107,5 +103,4 @@ class PostsController extends Controller
         }
         return redirect('/');
     }
-    
 }
